@@ -1,2 +1,1 @@
-# Hi, this is Ru Peng! 
-# Welcome to My Persoal Page! 😊
+# Hi, this is Ru Peng, welcome to my persoal page! 😊
