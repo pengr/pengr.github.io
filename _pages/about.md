@@ -36,16 +36,22 @@ Also, I was a research intern at [Alibaba Qwen Team](https://tongyi.aliyun.com/q
 Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en), [Yi Fang](https://scholar.google.com/citations?user=BKTLYwQAAAAJ&hl=zh-CN) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
 **I am open to opportunities across academia and industry — feel free to get in touch!**
 
-<i class="ai ai-google-scholar"></i> [**Google Scholar**](https://scholar.google.com.tw/citations?user=3udA8hkAAAAJ&hl=zh-CN) &nbsp;&nbsp; 
-<!-- <i class="fas fa-book"></i>  [**Semantic Scholar**](https://www.semanticscholar.org/author/Ru-Peng/2143711760) &nbsp;&nbsp;  --> 
+<!-- <i class="ai ai-google-scholar"></i> [**Google Scholar**](https://scholar.google.com.tw/citations?user=3udA8hkAAAAJ&hl=zh-CN) &nbsp;&nbsp; 
+<i class="fas fa-book"></i>  [**Semantic Scholar**](https://www.semanticscholar.org/author/Ru-Peng/2143711760) &nbsp;&nbsp;  
 <i class="fa fa-twitter"></i> [**Twitter**](https://x.com/_rupeng_) &nbsp;&nbsp; 
 <i class="fa fa-envelope"></i> [**Email**](mailto:rupeng@zju.edu.cn) &nbsp;&nbsp; 
 <i class="fa fa-weixin"></i> [**WeChat**](https://github.com/pengr/pengr.github.io/blob/main/assets/img/wechat-qr.jpg) &nbsp;&nbsp; 
 <i class="fa fa-github"></i> [**GitHub**](https://github.com/pengr) &nbsp;&nbsp; 
-<i class="fa fa-huggingface"></i> [**Huggingface**](https://huggingface.co/RuPeng) 
-<!-- <br/>&nbsp;&nbsp; <i class="fab fa-zhihu"></i> [**Zhihu**](https://www.zhihu.com/people/pengru/posts) <br/> -->
+<i class="fa fa-huggingface"></i> [**Huggingface**](https://huggingface.co/RuPeng) &nbsp;&nbsp; 
+<i class="fab fa-zhihu"></i> [**Zhihu**](https://www.zhihu.com/people/pengru/posts) &nbsp;&nbsp; -->
 
-&nbsp;&nbsp;
+<img src="/assets/img/google_scholar.svg" alt="Google Scholar" style="height: 20px; vertical-align: middle;"> [**Google Scholar**](https://scholar.google.com.tw/citations?user=3udA8hkAAAAJ&hl=zh-CN) &nbsp;&nbsp; 
+<img src="/assets/img/twitter-color.svg" alt="Twitter" style="height: 20px; vertical-align: middle;"> [**Twitter**](https://x.com/_rupeng_) &nbsp;&nbsp; 
+<img src="/assets/img/email.svg" alt="Email" style="height: 20px; vertical-align: middle;"></i> [**Email**](mailto:rupeng@zju.edu.cn) &nbsp;&nbsp; 
+<img src="/assets/img/wechat.svg" alt="Wechat" style="height: 20px; vertical-align: middle;"></i> [**WeChat**](https://github.com/pengr/pengr.github.io/blob/main/assets/img/wechat-qr.jpg) &nbsp;&nbsp; 
+<img src="/assets/img/github.svg" alt="GitHub" style="height: 20px; vertical-align: middle;"> [**GitHub**](https://github.com/pengr) &nbsp;&nbsp; 
+<img src="/assets/img/hf-logo.svg" alt="Huggingface" style="height: 20px; vertical-align: middle;">  [**Huggingface**](https://huggingface.co/RuPeng)  &nbsp;&nbsp; 
+
 
 ### <span style="font-family: 'Open Sans'; font-weight: bold;">🔍 Research Interest</span>
 
