@@ -1,0 +1,120 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+
+  <article>
+    {% if page.profile %}
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="clearfix">{{ content }}</div>
+
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Latest posts -->
+    <!-- {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    {% endif %} -->
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Services -->
+      <h3 style="color: inherit; font-weight: bold;">📚 Academic Services</h3>
+      <ul>
+            <li><strong>Conference Reviewer:</strong> ICLR 2024, 2025; ICML 2023, 2025; NeurIPS 2022, 2023, 2024; CVPR 2025; ICCV 2023, 2025; ECCV 2024; ACL 2024; AISTATS 2025; COLM 2024.</li>
+            <li><strong>Journal Reviewer:</strong> IEEE Transactions on Big Data (TBD), Transactions of Machine Learning Research (TMLR).</li>
+            <li><strong>Publication Chair:</strong> International Conference on Natural Language Processing (ICNLP) 2025.</li>
+      </ul>
+
+      <h3 style="color: inherit; font-weight: bold;">🎖 Awards</h3>
+      <ul>
+            <li><strong>Merit Student, Zhejiang University, 2022-2024.</li>
+      </ul>
+
+      <!-- Miscellaneous -->
+        <h3 style="color: inherit; font-weight: bold;">🤗 Miscellaneous</h3>
+        <ul>
+              <li>I yearn to be a carefree guitar-playing singer🎸🎤, strumming melodies of mirth🎵 into life.</li>
+              <li>I am a sports enthusiast interested in basketball🏀, football⚽, outdoor running🏃‍♂️ and so much more.</li>
+              <li>In my leisure time, I love traveling around the world, gathering with friends, and trying anything new—except food; I prefer fruits and Cantonese cuisine.</li>
+        </ul>
+          
+      <div style="text-align:center;">
+        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=150&t=n&d=tS-1W4gsJQveW3uLgiUjZjQG3LnHb7prM6Wkzr-ARIQ&co=b509ac'></script>
+      </div>
+      
+      <!-- Social -->
+      {%- if page.social %}
+        <div class="social">
+          <div class="contact-icons">
+            {% include social.html %}
+          </div>
+
+          <div class="contact-note">
+            {{ site.contact_note }}
+          </div>
+
+        </div>
+      {%- endif %}
+    </article>
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+  </article>
+</div>
