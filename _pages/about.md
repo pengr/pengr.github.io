@@ -53,7 +53,7 @@ Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https:
 <img src="/assets/img/hf-logo.svg" alt="Huggingface" style="height: 18px; vertical-align: middle;">  [**Huggingface**](https://huggingface.co/RuPeng)  &nbsp;&nbsp; 
 
 
-### <span style="font-family: 'Open Sans'; font-weight: bold;">🔍 Research Interest</span>
+<div style="clear: both;"></div> ### <span style="font-family: 'Open Sans'; font-weight: bold;">🔍 Research Interest</span>
 
 <!-- <small><em>"Seek truth and beauty."</em></small> -->
 My research interests spread across several AI fields, including **LLMs (current emphasis)**, Machine learning, NLP and multimodal - toward building AGl to change human living.
