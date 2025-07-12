@@ -143,15 +143,15 @@ newsletter:
 # Collections # <fix>, Removing the projects page
 # -----------------------------------------------------------------------------
 
-collections:
-  books:
-    output: true
-  news:
-    defaults:
-      layout: post
-    output: true
-  projects:
-    output: true
+# collections:
+#   books:
+#     output: true
+#   news:
+#     defaults:
+#       layout: post
+#     output: true
+#   projects:
+#     output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -195,23 +195,18 @@ exclude:
   # # <fix>, Removing the blog page
   - _posts
   - _pages/blog.md
-  # - _pages/dropdown.md
-  # - _pages/about.md
-  # - _posts/blog.md
-  # - _includes/latest_posts.liquid
-  # - _includes/related_posts.liquid
-  # - _layouts/archive.liquid
-  # - _plugins/external-posts.rb
-  # - _layouts/post.liquid
+  - _includes/latest_posts.liquid
+  - _includes/related_posts.liquid
+  - _layouts/archive.liquid
+  - _plugins/external-posts.rb
   # # <fix>, Removing the projects page
-  # - _projects
-  # - _pages/projects.md
-  # - _includes/projects_horizontal.liquid
-  # - _includes/projects.liquid
+  - _projects
+  - _pages/projects.md
+  - _includes/projects_horizontal.liquid
+  - _includes/projects.liquid
   # # <fix>, Removing the repositories page
-  # - _pages/repositories.md
-  # - _includes/repository
-  # - _data/repositories.yml
+  - _pages/repositories.md
+  - _includes/repository
   # # <fix>, Removing the cv page
   # - assets/json/resume.json
   # - _data/cv.yml
