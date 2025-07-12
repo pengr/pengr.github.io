@@ -7,7 +7,7 @@ subtitle: <a href='#'>彭 儒,  PhD at Zhejiang University</a>.
 profile:
   align: left
   image: rupeng.jpg
-  image_circular: True # crops the image to make it circular
+  image_circular: False # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
