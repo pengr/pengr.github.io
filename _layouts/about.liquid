@@ -42,25 +42,25 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">🔥 News</a>
-      </h2>
+      <h3>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit; font-weight: bold;">🔥 News</a>
+      </h3>
       {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Latest posts -->
     <!-- {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
+      <h3>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit; font-weight: bold;">latest posts</a>
+      </h3>
       {% include latest_posts.liquid %}
     {% endif %} -->
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">📝 Selected Publications</a>
-      </h2>
+      <h3>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: bold;">📝 Selected Publications</a>
+      </h3>
       {% include selected_papers.liquid %}
     {% endif %}
 
@@ -75,9 +75,9 @@ layout: default
       <!-- Miscellaneous -->
         <h3 style="color: inherit; font-weight: bold;">🤗 Miscellaneous</h3>
         <ul>
-              <li>I yearn to be a carefree guitar-playing singer🎸🎤, strumming melodies of mirth🎵 into life.</li>
+              <li>I yearn to be a carefree guitar-playing singer👩‍🎤, strumming melodies of mirth🎵 into life.</li>
               <li>I am a sports enthusiast interested in basketball🏀, football⚽, outdoor running🏃‍♂️ and so much more.</li>
-              <li>In my leisure time, I love traveling around the world, gathering with friends, and trying anything new—except food; I prefer fruits and Cantonese cuisine.</li>
+              <li>I love traveling around the world🗺️, gathering with friends🍻, and trying anything new — except terrible food.</li>
         </ul>
           
       <div style="text-align:center;max-width:150px; margin: 0 auto;">
