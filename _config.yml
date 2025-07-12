@@ -47,8 +47,8 @@ repo_trophies:
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
-footer_fixed: true
+navbar_ed: true
+footer_ed: true
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -87,18 +87,18 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog # <fix>, Removing the blog page
 # -----------------------------------------------------------------------------
 
-# blog_name: al-folio # blog_name will be displayed in your blog page
-# blog_description: a simple whitespace theme for academics
-# permalink: /blog/:year/:title/
-# lsi: false # produce an index for related posts
+blog_name: al-folio # blog_name will be displayed in your blog page
+blog_description: a simple whitespace theme for academics
+permalink: /blog/:year/:title/
+lsi: false # produce an index for related posts
 
-# # Pagination
-# pagination:
-#   enabled: true
+# Pagination
+pagination:
+  enabled: true
 
-# related_blog_posts:
-#   enabled: true
-#   max_related: 5
+related_blog_posts:
+  enabled: true
+  max_related: 5
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
@@ -143,15 +143,15 @@ newsletter:
 # Collections # <fix>, Removing the projects page
 # -----------------------------------------------------------------------------
 
-# collections:
-#   books:
-#     output: true
-#   news:
-#     defaults:
-#       layout: post
-#     output: true
-#   projects:
-#     output: true
+collections:
+  books:
+    output: true
+  news:
+    defaults:
+      layout: post
+    output: true
+  projects:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -192,44 +192,44 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  # <fix>, Removing the blog page
-  - _posts
-  - _pages/blog.md
-  - _pages/dropdown.md
-  - _pages/about.md
-  - _posts/blog.md
-  - _includes/latest_posts.liquid
-  - _includes/related_posts.liquid
-  - _layouts/archive.liquid
-  - _plugins/external-posts.rb
-  - _layouts/post.liquid
-  # <fix>, Removing the projects page
-  - _projects
-  - _pages/projects.md
-  - _includes/projects_horizontal.liquid
-  - _includes/projects.liquid
-  # <fix>, Removing the repositories page
-  - _pages/repositories.md
-  - _includes/repository
-  - _data/repositories.yml
-  # <fix>, Removing the cv page
-  - assets/json/resume.json
-  - _data/cv.yml
-  - _includes/cv
-  - _includes/resume
-  - _layouts/cv.liquid
-  - _pages/cv.md
-  # <fix>, Removing the teaching page
-  - _pages/teaching.md
-  # <fix>, Removing the people page
-  # <fix>, Removing the submenus/bookshelf page
-  - _books
-  - _layouts/book-review.liquid
-  - _layouts/book-shelf.liquid
-  - _pages/books.md
-  # <fix>, Removing the submenus/blog page
-  - lighthouse_results
-  - readme_preview
+  # # <fix>, Removing the blog page
+  # - _posts
+  # - _pages/blog.md
+  # - _pages/dropdown.md
+  # - _pages/about.md
+  # - _posts/blog.md
+  # - _includes/latest_posts.liquid
+  # - _includes/related_posts.liquid
+  # - _layouts/archive.liquid
+  # - _plugins/external-posts.rb
+  # - _layouts/post.liquid
+  # # <fix>, Removing the projects page
+  # - _projects
+  # - _pages/projects.md
+  # - _includes/projects_horizontal.liquid
+  # - _includes/projects.liquid
+  # # <fix>, Removing the repositories page
+  # - _pages/repositories.md
+  # - _includes/repository
+  # - _data/repositories.yml
+  # # <fix>, Removing the cv page
+  # - assets/json/resume.json
+  # - _data/cv.yml
+  # - _includes/cv
+  # - _includes/resume
+  # - _layouts/cv.liquid
+  # - _pages/cv.md
+  # # <fix>, Removing the teaching page
+  # - _pages/teaching.md
+  # # <fix>, Removing the people page
+  # # <fix>, Removing the submenus/bookshelf page
+  # - _books
+  # - _layouts/book-review.liquid
+  # - _layouts/book-shelf.liquid
+  # - _pages/books.md
+  # # <fix>, Removing the submenus/blog page
+  # - lighthouse_results
+  # - readme_preview
 keep_files:
   - CNAME
   - .nojekyll
