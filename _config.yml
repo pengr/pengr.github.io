@@ -192,39 +192,47 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  # # <fix>, Removing the blog page
+
+  # <fix>, Removing the blog page
   - _posts
   - _pages/blog.md
   - _includes/latest_posts.liquid
   - _includes/related_posts.liquid
   - _layouts/archive.liquid
   - _plugins/external-posts.rb
-  # # <fix>, Removing the projects page
+
+  # <fix>, Removing the projects page
   - _projects
   - _pages/projects.md
   - _includes/projects_horizontal.liquid
   - _includes/projects.liquid
-  # # <fix>, Removing the repositories page
+
+  # <fix>, Removing the repositories page
   - _pages/repositories.md
   - _includes/repository
-  # # <fix>, Removing the cv page
+
+  # <fix>, Removing the cv page
   # - assets/json/resume.json
   # - _data/cv.yml
   # - _includes/cv
   # - _includes/resume
   # - _layouts/cv.liquid
   # - _pages/cv.md
-  # # <fix>, Removing the teaching page
+
+  # <fix>, Removing the teaching page
   # - _pages/teaching.md
-  # # <fix>, Removing the people page
-  # # <fix>, Removing the submenus/bookshelf page
-  # - _books
-  # - _layouts/book-review.liquid
-  # - _layouts/book-shelf.liquid
-  # - _pages/books.md
-  # # <fix>, Removing the submenus/blog page
-  # # - lighthouse_results
-  # # - readme_preview
+
+  # <fix>, Removing the people page
+  - _pages/profiles.md
+  - _pages/about_einstein.md
+
+  # <fix>, Removing the submenus/bookshelf page
+  - _books
+  - _layouts/book-review.liquid
+  - _layouts/book-shelf.liquid
+  - _pages/books.md
+  - _pages/dropdown.md
+
 keep_files:
   - CNAME
   - .nojekyll
