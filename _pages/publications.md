@@ -14,11 +14,13 @@ nav_order: 1
 
 <!-- {% include bib_search.liquid %} -->
 
-<!-- <div class="publications">
+<div class="publications">
 
 {% bibliography %}
 
-</div> -->
+</div>
+
+
 <div class="publications">
 
 {%- for y in page.years %}
