@@ -52,6 +52,6 @@ Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https:
 <!-- <small><em>"Seek truth and beauty."</em></small> -->
 My research interests spread across several AI fields, including **LLMs (current emphasis)**, Machine learning, NLP and multimodal - toward building AGl to change human living.
 
-- **Large Language Models:** fouces on [pre-training data management](https://arxiv.org/abs/2502.19363), data synthesis (work in progress);
+- **Large Language Models:** foucs on [pre-training data management](https://arxiv.org/abs/2502.19363), data synthesis (work in progress);
 - **Unsupervised Model Evaluation:** focus on [contrastive-based](https://arxiv.org/abs/2308.11111), [energy-based](https://arxiv.org/abs/2401.12689) unsupervised model evaluation on varied environments;
 - **Machine Translation:** focus on [multimodal](https://arxiv.org/abs/2210.04468), [sign language](https://arxiv.org/abs/2304.10844), [text-only](https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1) machine translation;

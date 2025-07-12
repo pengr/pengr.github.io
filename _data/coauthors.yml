@@ -10,7 +10,7 @@
   - firstname: ["Tianyong"]
     url: https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en
 
-"Wang1":
+"Wang":
   - firstname: ["Haobo"]
     url: https://scholar.google.com/citations?user=DnN-rggAAAAJ&hl=en
     
@@ -18,9 +18,9 @@
   - firstname: ["Yi"]
     url: https://scholar.google.com/citations?user=BKTLYwQAAAAJ&hl=en
     
-"Wang2":
-  - firstname: ["Xiang"]
-    url: https://scholar.google.com/citations?user=HdhaQB0AAAAJ&hl=en
+# "Wang2":
+#   - firstname: ["Xiang"]
+#     url: https://scholar.google.com/citations?user=HdhaQB0AAAAJ&hl=en
     
 "Qiu":
   - firstname: ["Xipeng"]
@@ -34,13 +34,13 @@
   - firstname: ["Junyang"]
     url: https://scholar.google.com/citations?user=qp6IwtgAAAAJ&hl=en
 
-"Zhou1":
+"Zhou":
   - firstname: ["Jingren"]
     url: https://scholar.google.com/citations?user=64zxhRUAAAAJ&hl=en
     
-"Zhou2":
-  - firstname: ["Chang"]
-    url: https://scholar.google.com/citations?user=QeSoG3sAAAAJ&hl=en
+# "Zhou2":
+#   - firstname: ["Chang"]
+#     url: https://scholar.google.com/citations?user=QeSoG3sAAAAJ&hl=en
 
 "Yang":
   - firstname: ["Kexin"]
