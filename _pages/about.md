@@ -41,8 +41,8 @@ Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https:
 <i class="fa fa-twitter"></i> [**Twitter**](https://x.com/_rupeng_) &nbsp;&nbsp; 
 <i class="fa fa-envelope"></i> [**Email**](mailto:rupeng@zju.edu.cn) &nbsp;&nbsp; 
 <i class="fa fa-weixin"></i> [**WeChat**](https://github.com/pengr/pengr.github.io/blob/main/assets/img/wechat-qr.jpg) &nbsp;&nbsp; 
-<i class="fa fa-github"></i> [**GitHub**](https://github.com/pengr) 
-
+<i class="fa fa-github"></i> [**GitHub**](https://github.com/pengr) &nbsp;&nbsp; 
+<i class="fa fa-huggingface"></i> [**Huggingface**](https://huggingface.co/RuPeng) 
 <!-- <br/>&nbsp;&nbsp; <i class="fab fa-zhihu"></i> [**Zhihu**](https://www.zhihu.com/people/pengru/posts) <br/> -->
 
 &nbsp;&nbsp;
