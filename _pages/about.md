@@ -62,7 +62,7 @@ Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https:
 
 
 
-I'm a 3rd-year PhD student at Computer Science Department of [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/), advised by Professors [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en) and [Gang Chen](https://person.zju.edu.cn/en/0098112), and affiliated with [DiLab-ZJU](https://dilab-zju.github.io).
+I'm a final-year PhD student at Computer Science Department of [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/), advised by Professors [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en) and [Gang Chen](https://person.zju.edu.cn/en/0098112), and affiliated with [DiLab-ZJU](https://dilab-zju.github.io).
 Also, I was a research intern at [Alibaba Qwen Team](https://tongyi.aliyun.com/qianwen/), working with [Dayiheng Liu](https://scholar.google.com/citations?user=pPLQrX4AAAAJ&hl=zh-CN), [Chang Zhou](https://scholar.google.com/citations?user=QeSoG3sAAAAJ&hl=zh-CN) and [Jingren Zhou](https://scholar.google.com/citations?user=64zxhRUAAAAJ&hl=zh-CN) on data management and synthesis for **QWEN series models**.
 Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en), [Yi Fang](https://scholar.google.com/citations?user=BKTLYwQAAAAJ&hl=zh-CN) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
 
