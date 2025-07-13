@@ -194,6 +194,16 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
+  margin-bottom: 2rem; // <fix>, 这是一个可选的建议，增加头像和下方内容的间距
+
+  img { /* <fix>, 在这里添加或修改图片大小样式 */
+      max-width: 300px; /* **这是您需要调整的关键值**，尝试 150px, 180px, 200px 等 */
+      height: auto;     /* 保持图片比例，非常重要 */
+      // 如果您希望头像在其浮动区域内居中，可以取消下面两行的注释：
+      // display: block;
+      // margin-left: auto;
+      // margin-right: auto;
+    }
 
   .more-info {
     margin-bottom: 5px;
@@ -218,6 +228,11 @@ ul.task-list input[type="checkbox"] {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
+
+    img { // 确保在这里也生效或覆盖
+      max-width: 300px; // 保持一致，或根据需要单独调整
+      height: auto;
+    }
 
     .address {
       p {

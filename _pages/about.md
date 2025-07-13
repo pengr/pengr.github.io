@@ -12,6 +12,8 @@ profile:
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
+  # 新增或修改这一行
+  profile_image_width: 200 # 例如，将宽度设置为200px
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -56,4 +58,5 @@ My research interests spread across several AI fields, including **LLMs (current
 - **Large Language Models:** foucs on [pre-training data management](https://arxiv.org/abs/2502.19363), data synthesis (work in progress);
 - **Unsupervised Model Evaluation:** focus on [contrastive](https://arxiv.org/abs/2308.11111), [energy-based](https://arxiv.org/abs/2401.12689) unsupervised model evaluation on varied environments;
 - **Machine Translation:** focus on [multimodal](https://arxiv.org/abs/2210.04468), [sign language](https://arxiv.org/abs/2304.10844), [text-only](https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1) machine translation;
- &nbsp;
+
+&nbsp;
