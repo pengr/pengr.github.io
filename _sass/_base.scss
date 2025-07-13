@@ -757,7 +757,7 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 900; // <fix>, bolder -> 900
       }
 
       .author {

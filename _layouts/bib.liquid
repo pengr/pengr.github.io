@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-4 abbr">
+    <div class="col col-sm-3 abbr"> <!-- fix, col-sm-2改成了3 -->
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -10,7 +10,7 @@
             {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
           {%- endif -%}
           <abbr
-            class="badge rounded"
+            class="badge rounded" <!-- fix, badge rounded wx-100改成了badge rounded -->
             {% if venue_style %}
               {{ venue_style }}
             {% endif -%}
@@ -22,7 +22,7 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded">{{ entry.abbr }}</abbr> <!-- fix, badge rounded wx-100改成了badge rounded -->
         {% endif %}
       {% endif %}
       {% if entry.preview %}
