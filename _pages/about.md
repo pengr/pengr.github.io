@@ -45,7 +45,9 @@ Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https:
 
 
 <div style="clear: both;"></div> 
- &nbsp;
+
+&nbsp;
+
 ### <span style="font-family: 'Open Sans'; font-weight: bold;">🔍 Research Interest</span>
 
 <!-- <small><em>"Seek truth and beauty."</em></small> -->
