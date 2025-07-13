@@ -9,7 +9,7 @@ profile:
   image: rupeng.jpg
   image_circular: False # crops the image to make it circular
   more_info: >
-      <p style="font-size: 3em; font-family: 'Great Vibes', cursive;"> "Only love endures the passage of time"</p>
+      <p style="font-size: 1.8em; font-family: 'Great Vibes', cursive;"> "Only love endures the passage of time"</p>
 
   # more_info: >
   # <p style="font-size: 1.2em; font-family: 'Dancing Script', cursive;"> Only love endures the passage of time</p>
