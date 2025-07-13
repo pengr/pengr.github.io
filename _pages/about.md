@@ -9,7 +9,7 @@ profile:
   image: rupeng.jpg
   image_circular: False # crops the image to make it circular
   more_info: >
-      <p style="font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;">  Motto: Only love endures the passage of time.</p>
+      <p style="font-size: 1.5em; font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;">  Motto: Only love endures the passage of time.</p>
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
@@ -68,13 +68,14 @@ My research interests span across several AI fields, including **LLMs (current e
 - **Large Language Models:** focus on [pre-training data management](https://arxiv.org/abs/2502.19363), data synthesis (work in progress);
 - **Unsupervised Model Evaluation:** developing [contrastive](https://arxiv.org/abs/2308.11111), [energy-based](https://arxiv.org/abs/2401.12689) unsupervised model evaluation on varied environments;
 - **Machine Translation:** including [multimodal](https://arxiv.org/abs/2210.04468), [sign language](https://arxiv.org/abs/2304.10844), [text-only](https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1) machine translation;
+
 **I am open to opportunities across academia and industry — feel free to get in touch!**
 
-<!-- <img src="/assets/img/google_scholar.svg" alt="Google Scholar" style="height: 18px; vertical-align: middle;"> [**Google Scholar**](https://scholar.google.com.tw/citations?user=3udA8hkAAAAJ&hl=zh-CN) &nbsp;&nbsp; 
+<img src="/assets/img/google_scholar.svg" alt="Google Scholar" style="height: 18px; vertical-align: middle;"> [**Google Scholar**](https://scholar.google.com.tw/citations?user=3udA8hkAAAAJ&hl=zh-CN) &nbsp;&nbsp; 
 <img src="/assets/img/twitter-color.svg" alt="Twitter" style="height: 18px; vertical-align: middle;"> [**Twitter**](https://x.com/_rupeng_) &nbsp;&nbsp; 
 <img src="/assets/img/email.svg" alt="Email" style="height: 18px; vertical-align: middle;"> [**Email**](mailto:rupeng@zju.edu.cn) &nbsp;&nbsp; 
 <img src="/assets/img/wechat.svg" alt="Wechat" style="height: 18px; vertical-align: middle;"> [**WeChat**](https://github.com/pengr/pengr.github.io/blob/main/assets/img/wechat-qr.jpg) &nbsp;&nbsp; 
 <img src="/assets/img/github.svg" alt="GitHub" style="height: 18px; vertical-align: middle;"> [**GitHub**](https://github.com/pengr) &nbsp;&nbsp; 
-<img src="/assets/img/hf-logo.svg" alt="Huggingface" style="height: 18px; vertical-align: middle;">  [**Huggingface**](https://huggingface.co/RuPeng) -->
+<img src="/assets/img/hf-logo.svg" alt="Huggingface" style="height: 18px; vertical-align: middle;">  [**Huggingface**](https://huggingface.co/RuPeng)
 
 &nbsp;
