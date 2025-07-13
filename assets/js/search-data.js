@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "My research interests spread across LLMs, machine learning, NLP and multimodal. Please refer to my publicatios below.",
+          description: "My research interests spread across LLMs, machine learning, NLP and multimodal. Please refer to my publications below.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
