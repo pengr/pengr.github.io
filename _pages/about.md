@@ -9,7 +9,7 @@ profile:
   image: rupeng.jpg
   image_circular: False # crops the image to make it circular
   more_info: >
-      <p style="font-size: 1.5em; font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;">  Motto: Only love endures the passage of time.</p>
+      <p style="font-size: 1.2em; font-family: 'Great Vibes', cursive;">  Only love endures the passage of time.</p>
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
