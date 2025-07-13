@@ -85,7 +85,7 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-            <span style="font-weight: bold; color: #B509AC;">{{author.first}} {{author.last}}</span>
+            <span style="font-weight: bold; color: #da05d6;">{{author.first}} {{author.last}}</span> <!-- fix,改成和tong tian一样的设置 -->
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
