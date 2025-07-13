@@ -26,8 +26,7 @@ layout: default
       rounded' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.35}}px, (min-width: 576px)
-      35vw, 95vw"{% endcapture %}
-          {%
+      35vw, 95vw"{% endcapture %} {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
@@ -40,6 +39,7 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h3>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit; font-weight: bold;">🔥 News</a>
@@ -47,6 +47,15 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Latest posts -->
+    <!-- {% if page.latest_posts and page.latest_posts.enabled %}
+      <h3>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit; font-weight: bold;">latest posts</a>
+      </h3>
+      {% include latest_posts.liquid %}
+    {% endif %} -->
+
+    <!-- Selected papers -->
     {% if page.selected_papers %}
       <h3>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: bold;">📝 Selected Publications</a>
@@ -54,6 +63,7 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Services -->
     <h3 style="color: inherit; font-weight: bold;">📚 Academic Services</h3>
       <ul>
             <li><strong>Conference Reviewer:</strong> ICLR 2024, 2025; ICML 2023, 2025; NeurIPS 2022, 2023, 2024; CVPR 2025; ICCV 2023, 2025; ECCV 2024; ACL 2024; AISTATS 2025; COLM 2024.</li>
@@ -61,29 +71,29 @@ layout: default
             <li><strong>Publication Chair:</strong> International Conference on Natural Language Processing (ICNLP) 2025.</li>
       </ul>
 
-      <br><h3 style="color: inherit; font-weight: bold;">😊 Miscellaneous</h3>
+      <br><!-- 添加一个空行 -->
+      <h3 style="color: inherit; font-weight: bold;">😊 Miscellaneous</h3>
         <ul>
               <li>I yearn to be a carefree guitar-playing singer👩‍🎤, strumming melodies of mirth🎵 into life.</li>
               <li>I am a sports enthusiast interested in basketball🏀, football⚽, outdoor running🏃‍♂️ and so much more.</li>
               <li>I love traveling around the world🗺️, gathering with friends🍻, and trying anything new — except terrible food.</li>
         </ul>
       
-      <br><hr> {# Optional: Add a horizontal rule for visual separation #}
-    <div class="row mt-3 justify-content-center">
-        <div class="col-sm-6 col-md-4 mt-3 mt-md-0 text-center">
-            <div style="max-width: 150px; margin: 0 auto;">
-                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=_yjXCBp3edcthw2hhLcp52i3AZZAuzCEaNGD4LT-jxM"></script>
-            </div>
+      <br><!-- 添加一个空行 -->
+      <!-- 添加一个clustrmaps -->
+    <div class="row mt-3 justify-content-center"> {# Added justify-content-center for better centering #}
+        <div class="col-sm-6 col-md-4 mt-3 mt-md-0 text-center"> {# Adjusted column width for better display #}
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=_yjXCBp3edcthw2hhLcp52i3AZZAuzCEaNGD4LT-jxM"></script>
             <div class="caption">
                 World map showing visitor locations.
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 mt-3 mt-md-0 text-center">
+        <div class="col-sm-6 col-md-4 mt-3 mt-md-0 text-center"> {# Adjusted column width for better display #}
             <img
                 id="totoro-audio-player"
                 src="{{ '/assets/img/totorobottle.gif' | relative_url }}"
                 alt="Totoro Bottle"
-                style="cursor: pointer; max-width: 100px; height: auto; display: block; margin: 0 auto;" {# Adjusted max-width and added display/margin for better centering #}
+                style="cursor: pointer; max-width: 100%; height: auto;"
                 title="Click to play harp music"
             />
             <audio id="harp-audio" src="{{ '/assets/audio/harp.mp3' | relative_url }}" preload="auto"></audio>
@@ -98,7 +108,7 @@ layout: default
             const totoroImage = document.getElementById('totoro-audio-player');
             const harpAudio = document.getElementById('harp-audio');
 
-            if (totoroImage && harpAudio) {
+            if (totoroImage && harpAudio) { // Ensure elements exist before adding listeners
                 totoroImage.addEventListener('click', function() {
                     if (harpAudio.paused) {
                         harpAudio.play()
@@ -113,7 +123,8 @@ layout: default
             }
         });
     </script>
-    <hr> {# Optional: Another horizontal rule if more content follows #}
+
+    <!-- Social -->
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
