@@ -2,11 +2,7 @@
 layout: about
 title: About
 permalink: /
-# subtitle: <a href='#'>Hi 😃 ! 你好，我是彭儒！,  PhD at Zhejiang University</a>.
-# # subtitle: <a href='#'>Hi 😃 ! 你好，我是彭儒！,  PhD at Zhejiang University</a>.
-# # subtitle: <a href='#'>Hi 😃！I'm Ru Peng (/roo phug/), 彭儒，Perry. <br>你好😃，我是彭儒</a>.
-# <a href='#'>Hi 😃 I'm Ru Peng (/roo phung/), 彭儒 — Perry. <br>你好，我是彭儒！</a>
-subtitle: <a href="#">Hi 😃 I'm Ru Peng (/roo puhng/), also known as 彭儒 · Perry — PhD at Zhejiang University.</a>
+subtitle: <a href="#">Hi 😃! 彭儒 — PhD at Zhejiang University.</a>
 
 profile:
   align: left
