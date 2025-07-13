@@ -26,7 +26,7 @@ layout: default
       rounded' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.35}}px, (min-width: 576px)
-      35vw, 95vw"{% endcapture %} <!-- times: 0.3改成0.2, 30vw改成20vw -->
+      35vw, 95vw"{% endcapture %} <!-- times: 0.3改成0.35, 30vw改成35vw -->
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
