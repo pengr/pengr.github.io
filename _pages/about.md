@@ -10,6 +10,7 @@ profile:
   image_circular: False # crops the image to make it circular
   more_info: >
       <p style="font-size: 1.2em; font-family: 'Great Vibes', cursive;">  Only love endures the passage of time.</p>
+      <p><a href="/assets/pdf/Pengru_s_CV.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> CV</a></p>
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
