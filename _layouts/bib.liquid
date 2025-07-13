@@ -85,7 +85,7 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <em style="font-weight: bold; color: #d63384; font-style: normal;>  <!-- fix, 加了style="font-weight: bold; color: #d63384; font-style: normal;-->
             {{- author.first }}
             {{ author_last_html -}}
           </em>
