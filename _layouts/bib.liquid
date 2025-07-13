@@ -59,11 +59,11 @@
       {% endif %}
 
       {%- for author in entry.author_array limit: author_array_limit -%}
-        {% assign author_is_self = true %}
+        {% assign author_is_self = false %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        {% if site.scholar.last_name contains author_last_name %}
-          {% if site.scholar.first_name contains author.first %}
+        {% if author_last_name contains site.scholar.last_name %}
+          {% if author.first contains site.scholar.first_name %}
             {% assign author_is_self = true %}
           {% endif %}
         {%- endif -%}
@@ -85,10 +85,7 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em style="font-weight: bold; color: #d63384; font-style: normal;>  <!-- fix, 加了style="font-weight: bold; color: #d63384; font-style: normal;-->
-            {{- author.first }}
-            {{ author_last_html -}}
-          </em>
+            <span style="font-weight: bold; color: #B509AC;">{{author.first}} {{author.last}}</span>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
