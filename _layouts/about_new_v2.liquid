@@ -68,7 +68,7 @@ layout: default
               <li>I love traveling around the world🗺️, gathering with friends🍻, and trying anything new — except terrible food.</li>
         </ul>
       
-      <br><hr>
+      <br><hr> {# Optional: Add a horizontal rule for visual separation #}
     <div class="row mt-3 justify-content-center">
         <div class="col-sm-6 col-md-4 mt-3 mt-md-0 text-center">
             <div style="max-width: 150px; margin: 0 auto;">
@@ -83,7 +83,7 @@ layout: default
                 id="totoro-audio-player"
                 src="{{ '/assets/img/totorobottle.gif' | relative_url }}"
                 alt="Totoro Bottle"
-                style="cursor: pointer; max-width: 150px; height: auto; display: block; margin: 0 auto;"
+                style="cursor: pointer; max-width: 100px; height: auto; display: block; margin: 0 auto;" {# Adjusted max-width and added display/margin for better centering #}
                 title="Click to play harp music"
             />
             <audio id="harp-audio" src="{{ '/assets/audio/harp.mp3' | relative_url }}" preload="auto"></audio>
@@ -105,7 +105,7 @@ layout: default
                             .catch(e => console.error("Error playing audio:", e));
                     } else {
                         harpAudio.pause();
-                        harpAudio.currentTime = 0;
+                        harpAudio.currentTime = 0; // Reset playback to the beginning
                     }
                 });
             } else {
@@ -113,7 +113,7 @@ layout: default
             }
         });
     </script>
-    <hr>
+    <hr> {# Optional: Another horizontal rule if more content follows #}
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
