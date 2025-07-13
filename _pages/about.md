@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href="#">Hi 😃! 彭儒, PhD @ Zhejiang University.</a>
 
 profile:
-  align: left
+  align: right
   image: rupeng.jpg
   image_circular: False # crops the image to make it circular
   more_info: >
