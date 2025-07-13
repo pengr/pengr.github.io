@@ -14,18 +14,8 @@ nav_order: 1
 
 <!-- {% include bib_search.liquid %} -->
 
-<!-- <div class="publications">
-
-{% bibliography %}
-
-</div> -->
-
-
 <div class="publications">
 
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
+{% bibliography %}
 
 </div>
