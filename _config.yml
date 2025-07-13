@@ -213,12 +213,12 @@ exclude:
   - _includes/repository
 
   # <fix>, Removing the cv page
-  # - assets/json/resume.json
-  # - _data/cv.yml
-  # - _includes/cv
-  # - _includes/resume
-  # - _layouts/cv.liquid
-  # - _pages/cv.md
+  - assets/json/resume.json
+  - _data/cv.yml
+  - _includes/cv
+  - _includes/resume
+  - _layouts/cv.liquid
+  - _pages/cv.md
 
   # <fix>, Removing the Talk page
   # - _pages/teaching.md
