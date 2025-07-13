@@ -2,12 +2,18 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>彭 儒,  PhD at Zhejiang University</a>.
+# subtitle: <a href='#'>Hi 😃 ! 你好，我是彭儒！,  PhD at Zhejiang University</a>.
+# # subtitle: <a href='#'>Hi 😃 ! 你好，我是彭儒！,  PhD at Zhejiang University</a>.
+# # subtitle: <a href='#'>Hi 😃！I'm Ru Peng (/roo phug/), 彭儒，Perry. <br>你好😃，我是彭儒</a>.
+# <a href='#'>Hi 😃 I'm Ru Peng (/roo phung/), 彭儒 — Perry. <br>你好，我是彭儒！</a>
+subtitle: <a href="#">Hi 😃 I'm Ru Peng (/roo puhng/), also known as 彭儒 · Perry — PhD at Zhejiang University.</a>
 
 profile:
   align: left
   image: rupeng.jpg
   image_circular: False # crops the image to make it circular
+  more_info: >
+      <p>Only love can endures the passage of time.</p>
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
@@ -31,7 +37,7 @@ announcements:
 
 <!--[<span style="font-weight: bold; color: #B509AC;">Zhejiang University</span>](https://www.zju.edu.cn/english/)-->
 
-Hi 😃 ! I'm a PhD student at the Computer Science Department of [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/), advised by Professors [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en) and [Gang Chen](https://person.zju.edu.cn/en/0098112), and affiliated with [DiLab-ZJU](https://dilab-zju.github.io).
+I'm a PhD student at the Computer Science Department of [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/), advised by Professors [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en) and [Gang Chen](https://person.zju.edu.cn/en/0098112), and affiliated with [DiLab-ZJU](https://dilab-zju.github.io).
 Also, I was a research intern at [Alibaba Qwen Team](https://tongyi.aliyun.com/qianwen/), working with [Dayiheng Liu](https://scholar.google.com/citations?user=pPLQrX4AAAAJ&hl=zh-CN), [Chang Zhou](https://scholar.google.com/citations?user=QeSoG3sAAAAJ&hl=zh-CN) and [Jingren Zhou](https://scholar.google.com/citations?user=64zxhRUAAAAJ&hl=zh-CN), focuses on data management and synthesis of the **QWEN series models**.
 Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en), [Yi Fang](https://scholar.google.com/citations?user=BKTLYwQAAAAJ&hl=zh-CN) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
 **I am open to opportunities across academia and industry — feel free to get in touch!**
