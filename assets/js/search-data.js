@@ -74,6 +74,9 @@ ninja.data = [{
           section: "News",},{id: "news-qwen3-series-foundation-models-are-released-now",
           title: 'Qwen3 series foundation models are released now.',
           description: "",
+          section: "News",},{id: "news-ant-rl-technical-report-extending-rlvr-with-10k-rubric-rewards-is-now-released",
+          title: 'Ant RL technical report (extending RLVR with 10k+ Rubric rewards) is now released....',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
