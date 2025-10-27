@@ -74,8 +74,8 @@ ninja.data = [{
           section: "News",},{id: "news-qwen3-series-foundation-models-are-released-now",
           title: 'Qwen3 series foundation models are released now.',
           description: "",
-          section: "News",},{id: "news-ant-rl-technical-report-extending-rlvr-with-10k-rubric-rewards-is-now-released",
-          title: 'Ant RL technical report (extending RLVR with 10k+ Rubric rewards) is now released....',
+          section: "News",},{id: "news-ant-rl-technical-report-reinforcement-learning-with-rubric-anchors-extending-rlvr-with-10k-rubric-rewards-is-now-released",
+          title: 'Ant RL technical report “Reinforcement learning with rubric anchors“(extending RLVR with 10k+ Rubric...',
           description: "",
           section: "News",},{
       id: 'light-theme',
