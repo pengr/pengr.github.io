@@ -38,7 +38,8 @@ Also, I was a research intern at [Alibaba Qwen Team](https://tongyi.aliyun.com/q
 Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en), [Yi Fang](https://scholar.google.com/citations?user=BKTLYwQAAAAJ&hl=zh-CN) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
 
 My research interests span across several AI fields, including **LLMs (current emphasis)**, Machine learning, NLP and multimodal - toward building AGI to change human living:
-- **Large Language Models:** focus on [pre-training data management](https://arxiv.org/abs/2502.19363), data synthesis (work in progress);
+- **Large Language Models:** previously worked on [pre-training data governance](https://arxiv.org/abs/2502.19363) and data synthesis; **now focusing on Agents and Reinforcement Learning.**
+- **Large Language Models:** previously focused on [pre-training data management](https://arxiv.org/abs/2502.19363), data synthesis, Agent and RL (now);
 - **Unsupervised Model Evaluation:** developing [contrastive](https://arxiv.org/abs/2308.11111), [energy-based](https://arxiv.org/abs/2401.12689) unsupervised model evaluation on varied environments;
 - **Machine Translation:** including [multimodal](https://arxiv.org/abs/2210.04468), [sign language](https://arxiv.org/abs/2304.10844), [text-only](https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1) machine translation;
 
