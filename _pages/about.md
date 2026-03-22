@@ -37,10 +37,11 @@ I'm a 4th-year PhD student at Computer Science Department of [Zhejiang Universit
 Also, I was a research intern at [Alibaba Qwen Team](https://tongyi.aliyun.com/qianwen/), working with [Dayiheng Liu](https://scholar.google.com/citations?user=pPLQrX4AAAAJ&hl=zh-CN), [Chang Zhou](https://scholar.google.com/citations?user=QeSoG3sAAAAJ&hl=zh-CN) and [Junyang Lin](https://scholar.google.com/citations?hl=en&user=qp6IwtgAAAAJ&view_op=list_works&sortby=pubdate) on data management and synthesis for **QWEN series models**.
 Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en), [Yi Fang](https://scholar.google.com/citations?user=BKTLYwQAAAAJ&hl=zh-CN) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
 
-My research interests span across several AI fields, including **LLMs (current emphasis)**, Machine learning, NLP and multimodal - toward building AGI to change human living:
-- **Large Language Models:** previously worked on [pre-training data governance](https://arxiv.org/abs/2502.19363) and data synthesis; **Now focusing on Agents and Reinforcement Learning.**
+My research spans multiple AI areas, including **LLMs (current emphasis)**, machine learning, NLP, and multimodality, listed below in reverse chronological order.
+- **LLM Agents & RL:** currently focusing on Agents and [Reinforcement Learning](https://arxiv.org/abs/2508.12790).**
+- **LLM Data:** previously worked on [pre-training data governance](https://arxiv.org/abs/2502.19363) and data synthesis;
 - **Unsupervised Model Evaluation:** developing [contrastive](https://arxiv.org/abs/2308.11111), [energy-based](https://arxiv.org/abs/2401.12689) unsupervised model evaluation on varied environments;
-- **Machine Translation:** including [multimodal](https://arxiv.org/abs/2210.04468), [sign language](https://arxiv.org/abs/2304.10844), [text-only](https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1) machine translation;
+- **Machine Translation:** including [multimodal](https://arxiv.org/abs/2210.04468), [sign language](https://arxiv.org/abs/2304.10844), [text-only](https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1) machine translation.
 
 **I am open to opportunities across academia and industry — feel free to get in touch!**
 
