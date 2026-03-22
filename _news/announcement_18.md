@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-8-18
+date: 2026-1-26
 inline: true
 related_posts: false
 ---
 
-Ant RL technical report "[Reinforcement learning with rubric anchors](https://arxiv.org/pdf/2508.12790)"(extending RLVR with 10k+ Rubric rewards) is now released.
+Our paper "[OptimSyn: Influence-Guided Rubrics Optimization for Synthetic Data Generation](https://openreview.net/forum?id=vFcm5sOitq)" is accepted at **ICLR 2026**!
