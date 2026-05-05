@@ -80,6 +80,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-w2s-weak-to-strong-prompt-correction-for-large-language-models-is-accepted-at-machine-learning-2026",
           title: 'Our paper “W2S: Weak-to-Strong Prompt Correction for Large Language Models” is accepted at...',
           description: "",
+          section: "News",},{id: "news-our-paper-hss-synth-humanities-and-social-sciences-data-synthesis-for-llms-is-accepted-at-acl-findings-2026",
+          title: 'Our paper “[HSS-Synth: Humanities and Social Sciences Data Synthesis for LLMs]” is accepted...',
+          description: "",
+          section: "News",},{id: "news-our-paper-dataxman-selecting-and-mixing-pretraining-data-via-bilingual-mixture-of-experts-data-manager-is-accepted-at-science-china-information-sciences-2026",
+          title: 'Our paper “[DataXman: Selecting and Mixing Pretraining Data via Bilingual Mixture-of-Experts Data Manager]”...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
