@@ -34,14 +34,16 @@ announcements:
 ---
 
 I'm a 4th-year PhD student at Computer Science Department of [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/), advised by Professors [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en) and [Gang Chen](https://person.zju.edu.cn/en/0098112), and affiliated with [DiLab-ZJU](https://dilab-zju.github.io) and [State Key Laboratory of Blockchain and Data Security](https://bcds.zju.edu.cn/).
-Also, I was a research intern at [Alibaba Qwen Team](https://tongyi.aliyun.com/qianwen/), working with [Dayiheng Liu](https://scholar.google.com/citations?user=pPLQrX4AAAAJ&hl=zh-CN), [Chang Zhou](https://scholar.google.com/citations?user=QeSoG3sAAAAJ&hl=zh-CN) and [Junyang Lin](https://scholar.google.com/citations?hl=en&user=qp6IwtgAAAAJ&view_op=list_works&sortby=pubdate) on data management and synthesis for **QWEN series models**.
-Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en), [Yi Fang](https://scholar.google.com/citations?user=BKTLYwQAAAAJ&hl=zh-CN) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
+I've been fortunate to intern at three top LLM labs: **Tencent Hunyuan** (Dec 2025 – Now, long-horizon agentic RL), **Ant Group Inclusion AI** (Apr – Oct 2025, RL from rubric rewards), and [**Alibaba Qwen**](https://tongyi.aliyun.com/qianwen/) (Oct 2023 – Apr 2025, data management & synthesis for **Qwen series models**). <a href="#work-experience" role="button" class="btn btn-sm btn-outline-primary" style="margin-left: 4px;">💼 See Details</a>
+Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
 
-My research spans multiple AI areas, including **LLMs (current emphasis)**, machine learning, NLP, and multimodality, listed below in reverse chronological order.
-- **LLM Agents & RL:** currently focusing on Agents and [Reinforcement Learning](https://arxiv.org/abs/2508.12790);
-- **LLM Data:** previously worked on [pre-training data management](https://arxiv.org/abs/2502.19363) and data synthesis;
-- **Unsupervised Model Evaluation:** developing [contrastive](https://arxiv.org/abs/2308.11111), [energy-based](https://arxiv.org/abs/2401.12689) unsupervised model evaluation on varied environments;
-- **Machine Translation:** including [multimodal](https://arxiv.org/abs/2210.04468), [sign language](https://arxiv.org/abs/2304.10844), [text-only](https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1) machine translation.
+My research spans multiple AI areas, including **LLMs**, Machine learning, NLP,  and Multimodal.
+- **LLM Agentic RL (Now):** focusing on credit assignment and context management for long-horizon agentic RL;
+- **LLM Pretrain Data:** previously worked on [pre-training data management](https://arxiv.org/abs/2502.19363) and [data synthesis](https://aclanthology.org/2026.findings-acl.1880/);
+- **Unsupervised Model Evaluation:** evaluating model performance across varied environments via unsupervised proxies, like [contrastive](https://arxiv.org/abs/2308.11111), [energy-based](https://arxiv.org/abs/2401.12689) unsupervised model evaluation;
+- **Machine Translation:** including [multimodal (vision-language)](https://arxiv.org/abs/2210.04468), [sign language (video-text)](https://arxiv.org/abs/2304.10844), [text-only](https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1) machine translation.
+
+I also maintain two GitHub repositories: [**TableGPT**](https://github.com/tablegpt) (a table LLM) and [**LLM-Synthetic-Data**](https://github.com/pengr/LLM-Synthetic-Data) (a reading list on data synthesis) — welcome to follow!
 
 **I am open to opportunities across academia and industry — feel free to get in touch!**
 

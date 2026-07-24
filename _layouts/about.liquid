@@ -55,18 +55,8 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %} -->
 
-    <!-- Selected papers -->
-        {% if page.selected_papers %}
-      <h3>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: bold;">📝 Selected Publications</a>
-      </h3>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-   <br><!-- 添加一个空行 -->
-   
     <!-- Work Experience Section -->
-    <h3 style="color: inherit; font-weight: bold;">💼 Work Experience</h3>
+    <h3 id="work-experience" style="color: inherit; font-weight: bold;">💼 Work Experience</h3>
 
     <div class="work-experience">
       <!-- Experience 0: Hunyuan LLM Team, Tencent -->
@@ -78,7 +68,11 @@ layout: default
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
           <p style="margin: 0; font-weight: 500;">Qingyun Program Research Intern on Large Language Models</p>
         </div>
-        <p style="margin: 0.5rem 0 0 0;">Focused on agentic mid-training and RL.</p>
+        <p style="margin: 0.5rem 0 0 0;">Focused on credit assignment and context management for long-horizon agentic RL:</p>
+        <ul style="margin: 0.3rem 0 0 0; padding-left: 1.5rem;">
+          <li style="margin-bottom: 0.3rem;">credit assignment that rewards or penalizes each step in the agent loop;</li>
+          <li>context management that enables &ldquo;training with finite context, using with infinite context.&rdquo;</li>
+        </ul>
       </div>
 
       <!-- Experience 1: Ant Group -->
@@ -106,7 +100,7 @@ layout: default
         </div>
         <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
           <li style="margin-bottom: 0.3rem;">Contributed to the <strong>Qwen 1.5/2/2.5</strong> series base models.</li>
-          <li style="margin-bottom: 0.3rem;">Developed <strong>Data Manager (DataMan and DataXMan)</strong> for data selection and mixing in LLM pre-training, <strong>adopted in the Qwen base models and reported in Synced (机器之心)</strong>.</li>
+          <li style="margin-bottom: 0.3rem;">Developed <strong>Data Manager (<a href="https://openreview.net/forum?id=eNbA8Fqir4" target="_blank">DataMan</a> and <a href="https://www.sciengine.com/SCIS/doi/10.1007/s11432-025-4980-9" target="_blank">DataXman</a>)</strong> for data selection and mixing in LLM pre-training, <strong>adopted in the Qwen base models and reported in <a href="https://mp.weixin.qq.com/s/TTM2IVgtpgagNbYhyRdwzQ" target="_blank">Synced (机器之心)</a></strong>.</li>
           <li>Contributed to <strong>data synthesis in open-ended tasks</strong> for the Qwen series models.</li>
         </ul>
       </div>
@@ -136,10 +130,20 @@ layout: default
       </div> -->
     </div>
 
+    <!-- Selected papers -->
+        {% if page.selected_papers %}
+      <h3>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: bold;">📝 Selected Publications</a>
+      </h3>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+   <br><!-- 添加一个空行 -->
+
     <!-- Services -->
     <h3 style="color: inherit; font-weight: bold;">📚 Academic Services</h3>
       <ul>
-            <li><strong>Conference Reviewer:</strong> ICLR 2024, 2025; ICML 2023, 2025; NeurIPS 2022, 2023, 2024; CVPR 2025; ICCV 2023, 2025; ECCV 2024; ACL 2024, 2026; AISTATS 2025; COLM 2024.</li>
+            <li><strong>Conference Reviewer:</strong> ICLR 2024, 2025; ICML 2023, 2025; NeurIPS 2022, 2023, 2024; AAAI 2026; CVPR 2025; ICCV 2023, 2025; ECCV 2024; ACL 2024, 2026; AISTATS 2025; COLM 2024.</li>
             <li><strong>Journal Reviewer:</strong> IEEE Transactions on Big Data (TBD), Transactions of Machine Learning Research (TMLR).</li>
             <li><strong>Publication Chair:</strong> International Conference on Natural Language Processing (ICNLP) 2025.</li>
       </ul>
