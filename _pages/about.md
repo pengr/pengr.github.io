@@ -34,7 +34,7 @@ announcements:
 ---
 
 I'm a 4th-year PhD student at Computer Science Department of [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/), advised by Professors [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en) and [Gang Chen](https://person.zju.edu.cn/en/0098112), and affiliated with [DiLab-ZJU](https://dilab-zju.github.io) and [State Key Laboratory of Blockchain and Data Security](https://bcds.zju.edu.cn/).
-I've been fortunate to intern at three top LLM labs: **Tencent Hunyuan** (2025 – Now, long-horizon agentic RL), **Ant Group Inclusion AI** (2025, RL from rubric rewards), and [**Alibaba Qwen**](https://tongyi.aliyun.com/qianwen/) (2023 – 2025, data management & synthesis for **Qwen series models**).
+I've been fortunate to intern at three top LLM labs: **Tencent Hunyuan** (long-horizon agentic RL), **Ant Group Inclusion AI** (RL from rubric rewards), and [**Alibaba Qwen**](https://tongyi.aliyun.com/qianwen/) (data management & synthesis for **Qwen series models**).
 Previously, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
 
 My research spans multiple AI areas, including **LLMs**, Machine learning, NLP,  and Multimodal.
