@@ -215,6 +215,10 @@
   <script defer src="{{ '/assets/js/open-panel-analytics-setup.js' | relative_url }}"></script>
   <script async defer src="https://openpanel.dev/op1.js"></script>
 {% endif %}
+{% if site.enable_umami_analytics %}
+  <!-- Umami analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.umami_analytics }}"></script>
+{% endif %}
 
 {% if site.enable_progressbar %}
   <!-- Scrolling Progress Bar -->
