@@ -41,7 +41,7 @@ My research spans multiple AI areas, including **LLMs**, Machine learning, NLP, 
 <ul style="padding-left: 1.8rem; margin-left: 0;">
   <li><strong>LLM Agentic RL (Now):</strong> focusing on credit assignment and context management for long-horizon agents, with end-to-end data and benchmark construction;</li>
   <li><strong>LLM Pretrain Data:</strong> previously worked on <a href="https://arxiv.org/abs/2502.19363">pre-training data management</a> and <a href="https://aclanthology.org/2026.findings-acl.1880/">data synthesis</a>;</li>
-  <li><strong>Model Evaluation &amp; Benchmarking:</strong> evaluating model performance without labels via unsupervised proxies, like <a href="https://arxiv.org/abs/2308.11111">contrastive</a> and <a href="https://arxiv.org/abs/2401.12689">energy-based</a> automated model evaluation; benchmark construction for agentic and scientific tasks;</li>
+  <li><strong>Unsupervised Model Evaluation:</strong> evaluating model performance across varied environments via unsupervised proxies, like <a href="https://arxiv.org/abs/2308.11111">contrastive</a>, <a href="https://arxiv.org/abs/2401.12689">energy-based</a> unsupervised model evaluation;</li>
   <li><strong>Machine Translation:</strong> including <a href="https://arxiv.org/abs/2210.04468">multimodal (vision-language)</a>, <a href="https://arxiv.org/abs/2304.10844">sign language (video-text)</a>, <a href="https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1">text-only</a> machine translation.</li>
 </ul>
 
