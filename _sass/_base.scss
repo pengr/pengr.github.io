@@ -203,6 +203,7 @@ ul.task-list input[type="checkbox"] {
     p {
       display: inline-block;
       margin: 0;
+      max-width: 100%;
     }
   }
 }
@@ -217,7 +218,16 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 22%; // <fix>, 30->35->22, smaller photo leaves more room for text
+    // Sized so the Great Vibes tagline under the photo fits on one line.
+    // "Only love endures the passage of time" measures ~265px at 1.5em/24px;
+    // 24% of the 1200px container (~281px) clears it with a small margin.
+    width: 24%;
+
+    .more-info p {
+      // Desktop only: the column is wide enough, so keep it on one line even
+      // if the webfont falls back. Mobile keeps default wrapping.
+      white-space: nowrap;
+    }
 
     .address {
       p {
