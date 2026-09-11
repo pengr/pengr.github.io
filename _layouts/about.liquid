@@ -153,12 +153,16 @@ layout: default
       <p>I love music 🎵, sports (basketball 🏀, football ⚽, running 🏃‍♂️, etc.), traveling the world 🗺️, hanging out with friends 🍻, and trying anything new. Click on Totoro below ↘️ to hear one of my favorite songs: 失恋ソング沢山聴いて泣いてばかりの私はもう。</p>
 
       <br><!-- 添加一个空行 -->
-      <!-- 访客地球仪:数据由 Umami 采集,后续接入 globe.gl 渲染 -->
-    <div class="row mt-3 justify-content-center">
-        <div class="col-sm-6 col-md-4 mt-3 mt-md-0 text-center">
-            <div style="max-width: 150px; margin: 0 auto;">
-                <!-- TODO(globe): 此处将渲染 globe.gl 访客地球仪 -->
-            </div>
+      <!-- 访客地球仪:Umami 采集 + globe.gl 渲染,滚动到才加载 -->
+    <div class="row mt-3 justify-content-center align-items-center">
+        <div class="col-sm-6 col-md-4 mt-3 mt-md-0 text-center visitor-globe-wrap">
+            <div
+                id="visitor-globe"
+                data-visitors="{{ '/assets/json/visitors.json' | relative_url }}"
+                data-world="{{ '/assets/json/countries-110m.json' | relative_url }}"
+                style="max-width: 260px; aspect-ratio: 1 / 1; margin: 0 auto;"
+            ></div>
+            <div id="visitor-globe-caption" class="text-muted" style="font-size: 0.72rem; margin-top: 4px;"></div>
         </div>
         <div class="col-sm-6 col-md-4 mt-3 mt-md-0 text-center">
             <img
@@ -192,6 +196,8 @@ layout: default
             }
         });
     </script>
+
+    <script defer src="{{ '/assets/js/visitor-globe.js' | relative_url }}"></script>
 
     <!-- Social -->
     {% if page.social %}

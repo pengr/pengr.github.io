@@ -1,0 +1,20 @@
+{
+  "updated": "2026-09-11",
+  "source": "seed data - replace via bin/update-visitors.py after exporting from Umami",
+  "total": 0,
+  "points": [
+    { "city": "Beijing",      "country": "CN", "lat": 39.9042,  "lng": 116.4074, "count": 1 },
+    { "city": "Shenzhen",     "country": "CN", "lat": 22.5431,  "lng": 114.0579, "count": 1 },
+    { "city": "Hong Kong",    "country": "HK", "lat": 22.3193,  "lng": 114.1694, "count": 1 },
+    { "city": "Singapore",    "country": "SG", "lat": 1.3521,   "lng": 103.8198, "count": 1 },
+    { "city": "Tokyo",        "country": "JP", "lat": 35.6762,  "lng": 139.6503, "count": 1 },
+    { "city": "Seoul",        "country": "KR", "lat": 37.5665,  "lng": 126.9780, "count": 1 },
+    { "city": "London",       "country": "GB", "lat": 51.5074,  "lng": -0.1278,  "count": 1 },
+    { "city": "Zurich",       "country": "CH", "lat": 47.3769,  "lng": 8.5417,   "count": 1 },
+    { "city": "New York",     "country": "US", "lat": 40.7128,  "lng": -74.0060, "count": 1 },
+    { "city": "Pittsburgh",   "country": "US", "lat": 40.4406,  "lng": -79.9959, "count": 1 },
+    { "city": "Seattle",      "country": "US", "lat": 47.6062,  "lng": -122.3321,"count": 1 },
+    { "city": "Toronto",      "country": "CA", "lat": 43.6532,  "lng": -79.3832, "count": 1 },
+    { "city": "Sydney",       "country": "AU", "lat": -33.8688, "lng": 151.2093, "count": 1 }
+  ]
+}
