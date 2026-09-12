@@ -724,7 +724,10 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    // Was --global-divider-color, i.e. rgba(0, 0, 0, 0.1) in light mode -- the
+    // year headings were near-invisible. The divider colour stays on the rule.
+    color: var(--global-text-color);
+    font-weight: 700;
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;

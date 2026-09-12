@@ -367,6 +367,7 @@ filtered_bibtex_keywords:
     preview,
     selected,
     slides,
+    sortkey,
     supp,
     video,
     website,
