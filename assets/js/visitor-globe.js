@@ -1,23 +1,25 @@
 // Visitor globe — lazy-loaded 3D globe showing where visitors come from.
 //
 // Design notes:
-//  - Nothing is fetched until the globe scrolls into view (IntersectionObserver).
-//    globe.gl is ~1.9MB, so eagerly loading it would defeat the purpose of having
-//    removed the old blocking ClustrMaps script.
-//  - All assets (globe.gl, topojson, visitor data) are loaded at that point only.
-//  - Any failure degrades to a hidden container rather than a broken page.
+//  - Nothing loads until the globe scrolls into view (IntersectionObserver).
+//    globe.gl is ~1.9MB, so eager loading would undo the speedup we got from
+//    dropping the old blocking ClustrMaps script.
+//  - Earth textures are vendored under assets/img/globe/ rather than pulled
+//    from a CDN: the ClustrMaps outage showed how a third-party host going
+//    dark takes the whole widget with it.
+//  - Any failure hides the container instead of leaving a broken box.
 
 (function () {
   'use strict';
 
   var GLOBE_JS = 'https://cdn.jsdelivr.net/npm/globe.gl@2/dist/globe.gl.min.js';
-  var TOPOJSON_JS = 'https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js';
 
   var el = document.getElementById('visitor-globe');
   if (!el) return;
 
   var dataUrl = el.dataset.visitors;
-  var worldUrl = el.dataset.world;
+  var earthUrl = el.dataset.earth;
+  var bumpUrl = el.dataset.bump;
   var started = false;
 
   function loadScript(src) {
@@ -33,52 +35,26 @@
     });
   }
 
-  function isDark() {
-    return document.documentElement.getAttribute('data-theme') === 'dark';
-  }
-
-  // Distinct hue per continent-ish longitude band, so the globe reads as
-  // colourful rather than a single flat tint.
-  var LAND_COLORS = [
-    '#e9724d', // Americas  (west)
-    '#d64550', // Americas  (east)
-    '#8e6cb0', // Atlantic / W Africa
-    '#4a90d9', // Europe / Africa
-    '#2fa4a0', // Middle East / C Asia
-    '#3fae6b', // S / E Asia
-    '#c9a227', // Pacific / Oceania
-  ];
-
-  function landColor(feature) {
-    // Pick a band from the polygon's first coordinate — cheap and stable.
-    var lng = 0;
-    try {
-      var c = feature.geometry.coordinates;
-      while (Array.isArray(c[0])) c = c[0];
-      lng = c[0];
-    } catch (e) {
-      /* fall through to band 0 */
-    }
-    var idx = Math.floor(((lng + 180) / 360) * LAND_COLORS.length);
-    idx = Math.max(0, Math.min(LAND_COLORS.length - 1, idx));
-    return LAND_COLORS[idx];
-  }
-
-  // Visitor points ramp cool -> hot with visit count.
-  var POINT_RAMP = ['#4cc9f0', '#4895ef', '#b5179e', '#f72585', '#ff8500', '#ffd60a'];
+  // Visitor points ramp cool -> hot with visit count. Warm hues read well
+  // against the blue oceans of the Blue Marble texture.
+  var RAMP = ['#4cc9f0', '#7bdff2', '#ffd60a', '#ff8500', '#ff4d6d'];
 
   function pointColor(d, maxCount) {
-    var t = Math.sqrt((d.count || 1) / maxCount); // sqrt: don't let one city dominate
-    var idx = Math.round(t * (POINT_RAMP.length - 1));
-    return POINT_RAMP[Math.max(0, Math.min(POINT_RAMP.length - 1, idx))];
+    var t = Math.sqrt((d.count || 1) / maxCount); // sqrt: one busy city shouldn't dominate
+    var i = Math.round(t * (RAMP.length - 1));
+    return RAMP[Math.max(0, Math.min(RAMP.length - 1, i))];
   }
 
   function hexToRgba(hex, alpha) {
     var h = hex.replace('#', '');
-    var r = parseInt(h.substring(0, 2), 16);
-    var g = parseInt(h.substring(2, 4), 16);
-    var b = parseInt(h.substring(4, 6), 16);
-    return 'rgba(' + r + ',' + g + ',' + b + ',' + Math.max(0, alpha).toFixed(3) + ')';
+    return (
+      'rgba(' +
+      parseInt(h.substring(0, 2), 16) + ',' +
+      parseInt(h.substring(2, 4), 16) + ',' +
+      parseInt(h.substring(4, 6), 16) + ',' +
+      Math.max(0, alpha).toFixed(3) +
+      ')'
+    );
   }
 
   function start() {
@@ -87,38 +63,28 @@
 
     Promise.all([
       loadScript(GLOBE_JS),
-      loadScript(TOPOJSON_JS),
       fetch(dataUrl).then(function (r) {
-        return r.json();
-      }),
-      fetch(worldUrl).then(function (r) {
         return r.json();
       }),
     ])
       .then(function (results) {
-        var visitors = results[2];
-        var world = results[3];
-
-        var land = topojson.feature(world, world.objects.countries);
+        var visitors = results[1];
         var points = visitors.points || [];
         var maxCount = points.reduce(function (m, p) {
           return Math.max(m, p.count || 1);
         }, 1);
 
-        var size = el.clientWidth || 260;
+        var size = el.clientWidth || 280;
 
         var globe = Globe()(el)
           .width(size)
           .height(size)
           .backgroundColor('rgba(0,0,0,0)')
+          .globeImageUrl(earthUrl)
+          .bumpImageUrl(bumpUrl)
           .showAtmosphere(true)
-          .atmosphereColor(isDark() ? '#8ab4ff' : '#7aa5ff')
-          .atmosphereAltitude(0.2)
-          .hexPolygonsData(land.features)
-          .hexPolygonResolution(3)
-          .hexPolygonMargin(0.45)
-          .hexPolygonUseDots(true)
-          .hexPolygonColor(landColor)
+          .atmosphereColor('#8ab4ff')
+          .atmosphereAltitude(0.17)
           .pointsData(points)
           .pointLat('lat')
           .pointLng('lng')
@@ -126,40 +92,52 @@
             return pointColor(d, maxCount);
           })
           .pointAltitude(function (d) {
-            // sqrt keeps one busy city from dwarfing everything else
-            return 0.04 + 0.18 * Math.sqrt((d.count || 1) / maxCount);
+            return 0.02 + 0.12 * Math.sqrt((d.count || 1) / maxCount);
           })
-          .pointRadius(0.35)
+          .pointRadius(0.28)
           .pointLabel(function (d) {
             var place = d.city ? d.city + ', ' + d.country : d.country;
-            return '<div style="font:12px/1.4 -apple-system,sans-serif;background:rgba(0,0,0,.78);color:#fff;padding:5px 9px;border-radius:5px;white-space:nowrap">' +
-              '<b>' + place + '</b><br>' + (d.count || 1) + ' visit' + ((d.count || 1) > 1 ? 's' : '') +
-              '</div>';
+            var n = d.count || 1;
+            return (
+              '<div style="font:12px/1.4 -apple-system,BlinkMacSystemFont,sans-serif;' +
+              'background:rgba(0,0,0,.8);color:#fff;padding:5px 9px;border-radius:5px;' +
+              'white-space:nowrap"><b>' + place + '</b><br>' + n +
+              ' visit' + (n > 1 ? 's' : '') + '</div>'
+            );
           })
-          // Soft expanding halo under each point — reads as "live activity".
+          // Soft halo under each point so activity reads at a glance.
           .ringsData(points)
           .ringLat('lat')
           .ringLng('lng')
           .ringColor(function (d) {
             var base = pointColor(d, maxCount);
-            // Interpolate alpha across the ring: bright at the centre,
-            // transparent at the leading edge.
             return function (t) {
               return hexToRgba(base, 1 - t);
             };
           })
           .ringMaxRadius(function (d) {
-            return 1.5 + 2.5 * Math.sqrt((d.count || 1) / maxCount);
+            return 1.2 + 2.2 * Math.sqrt((d.count || 1) / maxCount);
           })
-          .ringPropagationSpeed(0.8)
-          .ringRepeatPeriod(2200);
+          .ringPropagationSpeed(0.7)
+          .ringRepeatPeriod(2400);
 
-        // Slow idle spin; pause while the user is interacting.
+        // Soften the default lighting a touch — the stock setup blows out
+        // the daylight side of the Blue Marble texture.
+        try {
+          var scene = globe.scene();
+          scene.children.forEach(function (c) {
+            if (c.type === 'AmbientLight') c.intensity = 1.1;
+            if (c.type === 'DirectionalLight') c.intensity = 0.7;
+          });
+        } catch (e) {
+          /* lighting is cosmetic; ignore if the API shifts */
+        }
+
         var controls = globe.controls();
         controls.autoRotate = true;
-        controls.autoRotateSpeed = 0.55;
+        controls.autoRotateSpeed = 0.45;
         controls.enableZoom = false;
-        globe.pointOfView({ lat: 25, lng: 100, altitude: 2.4 });
+        globe.pointOfView({ lat: 22, lng: 105, altitude: 2.3 });
 
         el.addEventListener('mouseenter', function () {
           controls.autoRotate = false;
@@ -168,7 +146,6 @@
           controls.autoRotate = true;
         });
 
-        // Keep it square and responsive.
         window.addEventListener('resize', function () {
           var w = el.clientWidth || size;
           globe.width(w).height(w);
@@ -183,7 +160,6 @@
         }
       })
       .catch(function (err) {
-        // Never let a dead CDN leave a broken box on the page.
         if (window.console) console.warn('[visitor-globe]', err);
         var wrap = el.closest('.visitor-globe-wrap') || el;
         wrap.style.display = 'none';
