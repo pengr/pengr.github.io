@@ -328,6 +328,12 @@ scholar:
   details_link: Details
 
   query: "@*"
+  # sortkey is YYYYMM.NN -- the venue's publication month plus a tie-break
+  # ordinal, since Ruby's sort is not stable. Sorting on it rather than on
+  # file order keeps both the year groups on /publications/ and the selected
+  # list on the homepage newest-first without hand-ordering the .bib file.
+  sort_by: sortkey
+  order: descending
   group_by: year
   group_order: descending
 
