@@ -86,6 +86,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-dataxman-selecting-and-mixing-pretraining-data-via-bilingual-mixture-of-experts-data-manager-is-accepted-at-science-china-information-sciences-2026",
           title: 'Our paper “DataXman: Selecting and Mixing Pretraining Data via Bilingual Mixture-of-Experts Data Manager”...',
           description: "",
+          section: "News",},{id: "news-our-paper-trace-a-unified-rollout-budget-allocation-framework-for-efficient-agentic-reinforcement-learning-is-accepted-at-emnlp-2026",
+          title: 'Our paper “TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement...',
+          description: "",
+          section: "News",},{id: "news-our-paper-medace-a-time-aware-asynchronous-clinical-environment-for-long-horizon-medical-treatment-decision-making-is-accepted-at-emnlp-findings-2026",
+          title: 'Our paper “MedACE: A Time-Aware Asynchronous Clinical Environment for Long-Horizon Medical Treatment Decision-Making”...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
