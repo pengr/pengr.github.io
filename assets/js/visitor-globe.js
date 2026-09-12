@@ -151,12 +151,23 @@
           globe.width(w).height(w);
         });
 
+        // Summary stays hidden until the globe is clicked, so the page isn't
+        // cluttered by a stat nobody asked for.
         var cap = document.getElementById('visitor-globe-caption');
         if (cap) {
           var total = visitors.total || points.length;
-          cap.textContent = total
+          var summary = total
             ? total + ' visitors · updated ' + (visitors.updated || '')
             : '';
+          if (summary) {
+            el.style.cursor = 'pointer';
+            el.title = 'Click to show visitor stats';
+            el.addEventListener('click', function () {
+              var shown = cap.textContent !== '';
+              cap.textContent = shown ? '' : summary;
+              el.title = shown ? 'Click to show visitor stats' : 'Click to hide';
+            });
+          }
         }
       })
       .catch(function (err) {
