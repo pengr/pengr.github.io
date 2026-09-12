@@ -239,7 +239,9 @@ ul.task-list input[type="checkbox"] {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  // Was 0.875rem, i.e. smaller than the 1rem body text, which buried the
+  // page lead. Sit just above body size instead.
+  font-size: 1.1rem;
 
   a {
     color: inherit;
