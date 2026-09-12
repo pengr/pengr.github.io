@@ -35,7 +35,8 @@ announcements:
 
 I'm a final-year PhD student at Computer Science Department of [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/), advised by Professors [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en) and [Gang Chen](https://person.zju.edu.cn/en/0098112).
 I'm affiliated with [DiLab-ZJU](https://dilab-zju.github.io) and the [State Key Laboratory of Blockchain and Data Security](https://bcds.zju.edu.cn/).
-I have interned at three LLM labs: **Tencent Hunyuan** (long-horizon agentic RL), **Ant Group Inclusion AI** (RL from rubric rewards), and [**Alibaba Qwen**](https://tongyi.aliyun.com/qianwen/) (pretraining data management & data synthesis for **Qwen series models**).
+Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN) ushered me into the research journey.
+I have interned at three LLM labs: **Tencent Hunyuan** (long-horizon agents), **Ant Group Inclusion AI** (data synthesis & RL from rubric rewards), and [**Alibaba Qwen**](https://tongyi.aliyun.com/qianwen/) (pre-training data management & synthesis for **Qwen series models**).
 
 My research spans multiple AI areas—**LLMs**, Machine Learning, NLP, and Multimodal:
 <ul style="padding-left: 1.8rem; margin-left: 0;">
@@ -46,8 +47,6 @@ My research spans multiple AI areas—**LLMs**, Machine Learning, NLP, and Multi
 </ul>
 
 I also maintain two GitHub repositories: [**TableGPT**](https://github.com/tablegpt) (a table LLM) and [**LLM-Synthetic-Data**](https://github.com/pengr/LLM-Synthetic-Data) (a reading list on data synthesis) — welcome to follow!
-
-Earlier on, I was fortunate to collaborate with Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN), who ushered me into the research journey.
 
 **I am open to opportunities across academia and industry — feel free to get in touch!**
 
