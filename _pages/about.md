@@ -35,13 +35,13 @@ announcements:
 
 I'm a final-year PhD student at Computer Science Department of [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/), advised by Professors [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en) and [Gang Chen](https://person.zju.edu.cn/en/0098112).
 I'm affiliated with [DiLab-ZJU](https://dilab-zju.github.io) and the [State Key Laboratory of Blockchain and Data Security](https://bcds.zju.edu.cn/).
-Early on, I was fortunate to be guided into research by Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN).
+Early on, I was fortunate that Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN) ushered me into research.
 I have interned at three LLM labs: **Tencent Hunyuan** (long-horizon agents), **Ant Group Inclusion AI** (data synthesis & RL from rubric rewards), and [**Alibaba Qwen**](https://tongyi.aliyun.com/qianwen/) (pre-training data management & synthesis for **Qwen series models**).
 
 My research spans multiple AI areas—**LLMs**, Machine Learning, NLP, and Multimodal:
 <ul style="padding-left: 1.8rem; margin-left: 0;">
-  <li><strong>LLM Agentic RL (Now):</strong> focusing on credit assignment and context management for long-horizon agents, with end-to-end data and benchmark construction;</li>
-  <li><strong>LLM Pretrain Data:</strong> previously worked on <a href="https://arxiv.org/abs/2502.19363">pre-training data management</a> and <a href="https://aclanthology.org/2026.findings-acl.1880/">data synthesis</a>;</li>
+  <li><strong>LLM Agentic RL &amp; Benchmarking (Now):</strong> focusing on credit assignment and context management for long-horizon agents, with end-to-end data and benchmark construction;</li>
+  <li><strong>LLM Pretrain Data:</strong> working on <a href="https://arxiv.org/abs/2502.19363">pre-training data management</a> and <a href="https://aclanthology.org/2026.findings-acl.1880/">data synthesis</a>;</li>
   <li><strong>Automated Model Evaluation:</strong> evaluating model performance without labels using unsupervised proxies, such as <a href="https://arxiv.org/abs/2308.11111">contrastive</a> and <a href="https://arxiv.org/abs/2401.12689">energy-based</a> automated model evaluation;</li>
   <li><strong>Machine Translation:</strong> including <a href="https://arxiv.org/abs/2210.04468">multimodal (vision-language)</a>, <a href="https://arxiv.org/abs/2304.10844">sign language (video-text)</a>, <a href="https://drive.google.com/file/d/1Z6VeCOJEj5Or1MyFR5N7M-szOj0yJ_77/view?pli=1">text-only</a> machine translation.</li>
 </ul>
