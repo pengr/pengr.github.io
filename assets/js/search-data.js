@@ -107,6 +107,9 @@ ninja.data = [{
           section: "News",},{id: "news-tencent-hy4-preview-is-released-now",
           title: 'Tencent Hy4-preview is released now.',
           description: "",
+          section: "News",},{id: "news-two-papers-from-weak-signals-to-strong-models-preference-delta-aggregation-with-lora-merging-and-from-structural-feedback-to-prompt-policies-learning-faithful-text-to-image-prompt-editors-are-accepted-at-neurips-2026",
+          title: 'Two papers “From “Weak” Signals to Strong Models: Preference Delta Aggregation with LoRA...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
