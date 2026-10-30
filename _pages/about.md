@@ -38,8 +38,6 @@ I'm affiliated with [DiLab-ZJU](https://dilab-zju.github.io) and the [State Key 
 Early on, I was fortunate that Professors [Tianyong Hao](https://scholar.google.com/citations?user=gM77jOQAAAAJ&hl=en) and [Kehai Chen](https://scholar.google.com/citations?user=_M4Am0AAAAAJ&hl=zh-CN) ushered me into research.
 I have interned at three LLM labs: **Tencent Hunyuan** (long-horizon agents), **Ant Group Inclusion AI** (data synthesis & RL from rubric rewards), and [**Alibaba Qwen**](https://tongyi.aliyun.com/qianwen/) (pre-training data management & synthesis for **Qwen series models**).
 
-I currently contribute to [Hy4-preview](https://huggingface.co/tencent/Hy4-preview), [Hy3](https://huggingface.co/tencent/Hy3), and [Hy3-preview](https://huggingface.co/tencent/Hy3-preview), focusing on long-horizon agents. I work on large-scale coding-agent RL production, credit assignment, context management, and end2end data pipeline and benchmark construction.
-
 My research spans multiple AI areas—**LLMs**, Machine Learning, NLP, and Multimodal:
 <ul style="padding-left: 1.8rem; margin-left: 0;">
   <li><strong>LLM Agentic RL &amp; Benchmarking (Now):</strong> training and evaluating long-horizon agents, covering credit assignment, context management, and end2end data and benchmark construction;</li>
