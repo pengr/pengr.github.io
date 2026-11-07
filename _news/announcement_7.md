@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Qwen1.5 series foundation models are released now.
+The Qwen1.5 model series is now released.
