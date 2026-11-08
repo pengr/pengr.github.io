@@ -48,10 +48,11 @@ My research spans multiple AI areas—**LLMs**, Machine Learning, NLP, and Multi
 
 I also maintain two GitHub repositories: [**TableGPT**](https://github.com/tablegpt) (a table LLM) and [**LLM-Synthetic-Data**](https://github.com/pengr/LLM-Synthetic-Data) (a reading list on data synthesis) — welcome to follow!
 
-**I am open to opportunities across academia and industry — feel free to get in touch!**
+**I am on the 2026–2027 job market for full-time positions starting in 2027. Please get in touch if my research may be a fit for your team.**
 
 <img src="/assets/img/google_scholar.svg" alt="Google Scholar" style="height: 18px; vertical-align: middle;"> [**Google Scholar**](https://scholar.google.com.tw/citations?user=3udA8hkAAAAJ&hl=zh-CN) &nbsp;&nbsp; 
 <img src="/assets/img/twitter-color.svg" alt="Twitter" style="height: 18px; vertical-align: middle;"> [**Twitter**](https://x.com/_rupeng_) &nbsp;&nbsp; 
+<img src="/assets/img/linkedin-color.svg" alt="LinkedIn" style="height: 18px; vertical-align: middle;"> [**LinkedIn**](https://www.linkedin.com/in/ru-peng-808a86307/) &nbsp;&nbsp;
 <img src="/assets/img/email.svg" alt="Email" style="height: 18px; vertical-align: middle;"> [**Email**](mailto:rupeng@zju.edu.cn) &nbsp;&nbsp; 
 <img src="/assets/img/github.svg" alt="GitHub" style="height: 18px; vertical-align: middle;"> [**GitHub**](https://github.com/pengr) &nbsp;&nbsp; 
 
