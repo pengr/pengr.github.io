@@ -50,10 +50,10 @@ I also maintain two GitHub repositories: [**TableGPT**](https://github.com/table
 
 **I am on the 2026–2027 job market for full-time positions starting in 2027. Please get in touch if my research may be a fit for your team.**
 
-<img src="/assets/img/google_scholar.svg" alt="Google Scholar" style="height: 18px; vertical-align: middle;"> [**Google Scholar**](https://scholar.google.com.tw/citations?user=3udA8hkAAAAJ&hl=zh-CN) &nbsp;&nbsp; 
-<img src="/assets/img/twitter-color.svg" alt="Twitter" style="height: 18px; vertical-align: middle;"> [**Twitter**](https://x.com/_rupeng_) &nbsp;&nbsp; 
-<img src="/assets/img/linkedin-color.svg" alt="LinkedIn" style="height: 18px; vertical-align: middle;"> [**LinkedIn**](https://www.linkedin.com/in/ru-peng-808a86307/) &nbsp;&nbsp;
-<img src="/assets/img/email.svg" alt="Email" style="height: 18px; vertical-align: middle;"> [**Email**](mailto:rupeng@zju.edu.cn) &nbsp;&nbsp; 
-<img src="/assets/img/github.svg" alt="GitHub" style="height: 18px; vertical-align: middle;"> [**GitHub**](https://github.com/pengr) &nbsp;&nbsp; 
+<a class="contact-link" href="https://scholar.google.com.tw/citations?user=3udA8hkAAAAJ&amp;hl=zh-CN"><img src="/assets/img/google_scholar.svg" alt="Google Scholar" style="height: 18px; vertical-align: middle;"> <strong>Google Scholar</strong></a> &nbsp;&nbsp;
+<a class="contact-link" href="https://x.com/_rupeng_"><img src="/assets/img/twitter-color.svg" alt="Twitter" style="height: 18px; vertical-align: middle;"> <strong>Twitter</strong></a> &nbsp;&nbsp;
+<a class="contact-link" href="https://www.linkedin.com/in/ru-peng-808a86307/"><img src="/assets/img/linkedin-color.svg" alt="LinkedIn" style="height: 18px; vertical-align: middle;"> <strong>LinkedIn</strong></a> &nbsp;&nbsp;
+<a class="contact-link" href="mailto:rupeng@zju.edu.cn"><img src="/assets/img/email.svg" alt="Email" style="height: 18px; vertical-align: middle;"> <strong>Email</strong></a> &nbsp;&nbsp;
+<a class="contact-link" href="https://github.com/pengr"><img src="/assets/img/github.svg" alt="GitHub" style="height: 18px; vertical-align: middle;"> <strong>GitHub</strong></a> &nbsp;&nbsp;
 
 &nbsp;
