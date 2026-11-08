@@ -107,20 +107,33 @@
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {% assign author_is_self = false %}
+          {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+          {% if site.scholar.last_name contains author_last_name %}
+            {% if site.scholar.first_name contains author.first %}
+              {% assign author_is_self = true %}
+            {% endif %}
+          {% endif %}
+          {% assign author_first_html = author.first | escape %}
+          {% assign author_last_html = author.last | escape | regex_replace: '((?:[*∗†‡§¶‖^]|&amp;)+)', '<sup>\1</sup>' %}
+          {% assign author_name_html = author_first_html | append: ' ' | append: author_last_html %}
+          {% if author_is_self %}
+            {% capture author_name_html %}<span style="font-weight: bold; color: #da05d6;">{{ author_name_html }}</span>{% endcapture %}
+          {% endif %}
+          {% assign more_authors_show = more_authors_show | append: author_name_html %}
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ', ' %}
           {% endunless %}
         {%- endfor -%}
-        {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
         , and
         <span
           class="more-authors"
+          data-authors="{{ more_authors_show | escape }}"
           title="click to view {{ more_authors_hide }}"
           onclick="
               var element = $(this);
               element.attr('title', '');
-              var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
+              var more_authors_text = element.text() == '{{ more_authors_hide }}' ? element.attr('data-authors') : '{{ more_authors_hide }}';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
                 element.html(more_authors_text.substring(0, cursorPosition + 1));
@@ -146,6 +159,8 @@
     </div>
 
     <!-- Journal/Book title and date -->
+    {% assign entrymonth = '' %}
+    {% assign entryyear = '' %}
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
